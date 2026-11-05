@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Deep navy background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="100%" stop-color="#102A4A"/>
+    </linearGradient>
+
+    <!-- Cyan → Blue gradient -->
+    <linearGradient id="dm" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#397BFF"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Shadow -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow
+        dx="0"
+        dy="10"
+        stdDeviation="12"
+        flood-opacity="0.35"
+      />
+    </filter>
+  </defs>
+
+  <!-- Rounded-square logo background -->
+  <rect
+    x="24"
+    y="24"
+    width="464"
+    height="464"
+    rx="105"
+    fill="url(#bg)"
+    filter="url(#shadow)"
+  />
+
+  <!-- Subtle inner border -->
+  <rect
+    x="27"
+    y="27"
+    width="458"
+    height="458"
+    rx="102"
+    fill="none"
+    stroke="#1B466D"
+    stroke-width="4"
+  />
+
+  <!-- DM MONOGRAM -->
+
+  <!-- D -->
+  <path
+    d="M125 145
+       L125 367
+       L190 367
+       C255 367 288 326 288 256
+       C288 186 255 145 190 145
+       Z
+       M171 188
+       L188 188
+       C222 188 240 210 240 256
+       C240 302 222 324 188 324
+       L171 324
+       Z"
+    fill="white"
+  />
+
+  <!-- M -->
+  <path
+    d="M270 367
+       L270 178
+       L316 178
+       L365 274
+       L414 178
+       L460 178
+       L460 367
+       L415 367
+       L415 250
+       L383 317
+       L347 317
+       L315 250
+       L315 367
+       Z"
+    fill="url(#dm)"
+    filter="url(#glow)"
+  />
+
+  <!-- Orbit / analytics swoosh -->
+  <path
+    d="M92 330
+       C165 410 335 425 443 290"
+    fill="none"
+    stroke="url(#dm)"
+    stroke-width="13"
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+
+  <!-- Orbit highlight -->
+  <path
+    d="M108 327
+       C178 389 325 404 428 295"
+    fill="none"
+    stroke="#7CEBFF"
+    stroke-width="3"
+    stroke-linecap="round"
+    opacity="0.7"
+  />
+
+  <!-- Small AI/Data analytics bars -->
+  <rect x="350" y="112" width="13" height="30" rx="4" fill="#00D9FF"/>
+  <rect x="372" y="99" width="13" height="43" rx="4" fill="#22BFFF"/>
+  <rect x="394" y="83" width="13" height="59" rx="4" fill="#397BFF"/>
+
+  <!-- Small glowing data point -->
+  <circle
+    cx="420"
+    cy="72"
+    r="7"
+    fill="#00D9FF"
+    filter="url(#glow)"
+  />
+
+</svg>

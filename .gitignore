@@ -1,0 +1,89 @@
+# ==========================================
+# DEPENDENCIES
+# ==========================================
+/node_modules
+/.pnp
+.pnp.js
+.yarn/
+
+# ==========================================
+# NEXT.JS BUILD & CACHE OUTPUTS
+# ==========================================
+/.next/
+/out/
+/build
+/dist
+
+# ==========================================
+# SENSITIVE ENVIRONMENT VARIABLES & SECRETS
+# ==========================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env*.local
+*.pem
+*.key
+
+# ==========================================
+# LOGS AND DEBUGGING
+# ==========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+/coverage
+
+# ==========================================
+# VERCEL DEPLOYMENT
+# ==========================================
+.vercel
+
+# ==========================================
+# IDE & EDITOR FILES
+# ==========================================
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# TYPESCRIPT & BUILD CACHING
+# ==========================================
+*.tsbuildinfo
+
+# VS Code
+.vscode/
+
+# ESLint
+.eslintcache
+
+# npm cache
+.npm
+
+# Temporary files
+*.tmp
+*.temp
+
+# VS Code
+.vscode/
